@@ -40,6 +40,16 @@ class PostsController extends Controller
     public function store(Request $request)
     {
         //
+        $this->validate($request,[
+        'title' => 'required'
+        'body' =>  'required'
+ ]);
+        $post = new post;
+        $post -> title = $request->input('title');
+        $post -> body = $request->input('body');
+        $post -> save();
+
+        return redirect('/posts')->with('success', 'Post created.');
     }
 
     /**

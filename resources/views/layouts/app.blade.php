@@ -38,18 +38,32 @@
 
 
                     <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="/">home</a>
+                         <li class="nav-item dropdown has-megamenu">
+                            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown"> home </a>
+                            <div class="dropdown-menu megamenu">
+                         
+                         
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/services">services</a>
+                          <li class="nav-item dropdown has-megamenu">
+                            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown"> services </a>
+                            <div class="dropdown-menu megamenu">
+                         
                         </li>
-                        <li class="nav-item">
+                         <li class="nav-item dropdown has-megamenu">
+                            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown"> Blog </a>
+                            <div class="dropdown-menu megamenu">
+                          
+                        </li>
+                        <li class="nav-item dropdown has-megamenu">
+                            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown"> About  </a>
+                            <div class="dropdown-menu megamenu">
+  
+                        </li>
+                         
                             <a class="nav-link" href="/posts">Blog</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/about">About</a>
-                        </li>
+                            
+                           <a class="nav-link" href="/services">services</a>
+                           <a class="nav-link" href="/">home</a>
 
                     </ul>
                     {{ $header }}
