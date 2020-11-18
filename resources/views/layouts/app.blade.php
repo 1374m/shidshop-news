@@ -26,6 +26,32 @@
             <!-- Page Heading -->
             <header class="bg-white shadow">
                 <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
+
+                <div class="callapse navbar-callapse" id="navbarSupportedContent"></div>
+
+
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/">add post</a>
+                        </li>
+                    </ul>
+
+
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/">home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/services">services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/posts">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/about">About</a>
+                        </li>
+
+                    </ul>
                     {{ $header }}
                 </div>
             </header>
