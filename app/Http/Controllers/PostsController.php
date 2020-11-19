@@ -17,8 +17,10 @@ class PostsController extends Controller
     {
    //  $posts = Post::all();
     //$posts = Post::orderBy('title','asc')->get();
-        $posts = DB::select('SELECT * from posts');
-        return view('posts.index')->with('posts', $posts);
+        // $posts = DB::select('SELECT * from posts');
+        $posts = Post::paginate();
+        // https://laravel.com/docs/8.x/pagination
+        return view('posts.index', compact('posts'));
     }
 
     /**
