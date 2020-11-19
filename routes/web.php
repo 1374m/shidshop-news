@@ -19,8 +19,8 @@ Route::get('/',[PagesController::class , 'index']);
 
 Route::get('/about',[PagesController::class, 'about']);
 
-Route::get('/service',[PagesController::class,'service']);
-
+Route::get('/service', [PagesController::class,'service']);
+Route::get('/test', [PostsController::class,'test']);
 /*
 Route::get('/about', function () {
 return view('about');
