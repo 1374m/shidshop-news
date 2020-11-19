@@ -43,7 +43,8 @@ class PostsController extends Controller
     {
         //
         $this->validate($request,['title' => 'required', 'body' =>  'required']);
-        $post = new post;
+        $post = new post;// this is wrong
+        // check this : https://laravel.com/docs/8.x/eloquent#mass-assignment
         $post -> title = $request->input('title');
         $post -> body = $request->input('body');
         $post -> save();
