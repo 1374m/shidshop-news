@@ -12,12 +12,14 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+use App\Http\Controllers\PagesController;
+use App\Http\Controllers\PostsController;
 
-Route::get('/','app/Http/Controller/PagesController@index');
+Route::get('/',[PagesController::class , 'index']);
 
-Route::get('/','PagesController@about');
+Route::get('/about',[PagesController::class, 'about']);
 
-Route::get('/service','app/Http/Controller/PagesController@service');
+Route::get('/service',[PagesController::class,'service']);
 
 /*
 Route::get('/about', function () {
@@ -32,7 +34,7 @@ Route::get('/users/{id}', function ($id) {
 
 
 
-Route::get('/posts','app/Http/Controller/PostsController@service');
+Route::get('/posts',[PostsController::class, 'service']);
 
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
