@@ -21,6 +21,7 @@ Route::get('/about',[PagesController::class, 'about']);
 
 Route::get('/service', [PagesController::class,'service']);
 Route::get('/test', [PostsController::class,'test']);
+// Route::resource('/posts-2', PostsController::class);
 /*
 Route::get('/about', function () {
 return view('about');
