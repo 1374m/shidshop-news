@@ -60,10 +60,6 @@
   
                         </li>
                          
-                            <a class="nav-link" href="/posts">Blog</a>
-                            
-                           <a class="nav-link" href="/services">services</a>
-                           <a class="nav-link" href="/">home</a>
 
                     </ul>
                     {{ $header }}
