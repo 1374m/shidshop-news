@@ -17,7 +17,8 @@ use App\Http\Controllers\PostsController;
 
 Route::get('/',[PagesController::class , 'index']);
 
-Route::get('/about',[PagesController::class, 'about']);
+// return redirect()->route('name');
+Route::get('/about',[PagesController::class, 'about'])->middleware('auth')->name('about');
 
 Route::get('/service', [PagesController::class,'service']);
 Route::get('/test', [PostsController::class,'test']);
