@@ -1,0 +1,13 @@
+get list of routes:
+php artisan route:list
+
+make model with Model, Controller and migration
+php artisan make:model Post -crm
+
+install debugbar
+composer require barryvdh/laravel-debugbar --dev
+
+do not use DB facade to get models, use ORM
+
+
+
